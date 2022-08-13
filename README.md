@@ -1,1 +1,0 @@
-# tbh-ubserbot
