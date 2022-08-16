@@ -1,8 +1,8 @@
-# Aditya Halder
+# TBH
 import asyncio
-from AdityaHalder.modules.databases import cli
+from TBH.modules.databases import cli
 
-collection = cli["Kaal"]["pmpermit"]
+collection = cli["Brotherhood"]["pmpermit"]
 
 PMPERMIT_MESSAGE = (
     "**ᴡᴀʀɴɪɴɢ!⚠️ ᴘʟᴢ ʀᴇᴀᴅ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴄᴀʀᴇꜰᴜʟʟʏ..\n\n**"
