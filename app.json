@@ -1,9 +1,9 @@
 {
     "name": "Tbh-Userbot",
-    "logo": "https://telegra.ph/file/eeeeb1cb94ed41a68b9d6.jpg",
+    "logo": "https://telegra.ph/file/18aa7d4520261993a2e4e.jpg",
     "description": "An Advanced Premium Music & user Bot For Telegram ID.",
     "keywords": ["music", "voice chat", "userbot"],
-    "repository": "https://github.com/BROTHERHOODOP/Tbh-Userbot",
+    "repository": "https://github.com/The-BrotherHood-Council/tbh-ubserbot",
     "stack": "container",
     "env": {
         "API_ID": {
