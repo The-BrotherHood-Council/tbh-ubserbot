@@ -10,9 +10,9 @@ from pyrogram import Client, filters
 from pyrogram.errors import StickersetInvalid, YouBlockedUser
 from pyrogram.raw.functions.messages import GetStickerSet
 from pyrogram.raw.types import InputStickerSetShortName
-from AdityaHalder.modules.helpers.program import get_arg
-from AdityaHalder.modules.helpers.filters import command
-from AdityaHalder.modules.helpers.decorators import sudo_users_only, errors
+from TBH.modules.helpers.program import get_arg
+from TBH.modules.helpers.filters import command
+from TBH.modules.helpers.decorators import sudo_users_only, errors
 
 
 
