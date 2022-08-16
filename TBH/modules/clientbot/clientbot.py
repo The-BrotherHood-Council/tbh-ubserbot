@@ -3,11 +3,11 @@ from pytgcalls import PyTgCalls
 from pytgcalls.types import Update
 from pytgcalls.types.input_stream import InputStream
 from pytgcalls.types.input_stream import InputAudioStream
-from AdityaHalder.config import API_ID, API_HASH, BOT_TOKEN, STRING_SESSION
+from TBH.config import API_ID, API_HASH, BOT_TOKEN, STRING_SESSION
 from . import queues
 
 
-client = Bot(STRING_SESSION, API_ID, API_HASH, plugins=dict(root="AdityaHalder.plugins"))
+client = Bot(STRING_SESSION, API_ID, API_HASH, plugins=dict(root="TBH.plugins"))
 robot = Bot(":memory:", API_ID, API_HASH, bot_token=BOT_TOKEN)
 
 pytgcalls = PyTgCalls(client)
