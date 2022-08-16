@@ -1,10 +1,10 @@
-# AdityaHalder
+# TBH
 import asyncio
 from pyrogram import *
 from pyrogram.types import *
-from AdityaHalder.modules.helpers.basics import edit_or_reply
-from AdityaHalder.modules.helpers.filters import command
-from AdityaHalder.utilities.misc import SUDOERS
+from TBH.modules.helpers.basics import edit_or_reply
+from TBH.modules.helpers.filters import command
+from TBH.utilities.misc import SUDOERS
 
 
 @Client.on_message(command(["alive"]) & SUDOERS)
