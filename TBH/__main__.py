@@ -10,13 +10,13 @@ from rich.console import Console
 from rich.table import Table
 from youtubesearchpython import VideosSearch
 
-from AdityaHalder.config import LOG_GROUP_ID, STRING_SESSION
-from AdityaHalder import client, robot, pytgcalls, ASSID, ASSNAME, BOT_ID, BOT_NAME, OWNER_ID
-from AdityaHalder.modules.helpers.filters import command
-from AdityaHalder.modules.helpers.decorators import errors, sudo_users_only
-from AdityaHalder.plugins import ALL_MODULES
-from AdityaHalder.utilities.inline import paginate_modules
-from AdityaHalder.utilities.misc import SUDOERS
+from TBH.config import LOG_GROUP_ID, STRING_SESSION
+from TBH import client, robot, pytgcalls, ASSID, ASSNAME, BOT_ID, BOT_NAME, OWNER_ID
+from TBH.modules.helpers.filters import command
+from TBH.modules.helpers.decorators import errors, sudo_users_only
+from TBH.plugins import ALL_MODULES
+from TBH.utilities.inline import paginate_modules
+from TBH.utilities.misc import SUDOERS
 
 loop = asyncio.get_event_loop()
 console = Console()
@@ -38,7 +38,7 @@ async def initiate_bot():
         )
         for all_module in ALL_MODULES:
             imported_module = importlib.import_module(
-                "AdityaHalder.plugins." + all_module
+                "TBH.plugins." + all_module
             )
             if (
                 hasattr(imported_module, "__MODULE__")
@@ -60,12 +60,12 @@ async def initiate_bot():
             status="[bold blue]Importation Completed!",
         )
     console.print(
-        "[bold green] 🥀 Genius Userbot Started ✨\n"
+        "[bold green] 🥀 Brotherhood Userbot Started ✨\n"
     )
     try:
         await robot.send_message(
             LOG_GROUP_ID,
-            "<b> 🥀 Genius UserBot is Here ✨</b>",
+            "<b> 🥀 Brotherhood UserBot is Here ✨</b>",
         )
     except Exception as e:
         print(
@@ -84,7 +84,7 @@ async def initiate_bot():
         try:
             await client.send_message(
                 LOG_GROUP_ID,
-                "<b>🥀 Genius UserBot is Active ✨</b>",
+                "<b>🥀 Brotherhood UserBot is Active ✨</b>",
             )
         except Exception as e:
             print(
@@ -99,38 +99,37 @@ async def initiate_bot():
             pass
         console.print(f"├[red] UserBot Started as {ASSNAME}")
         console.print(f"├[green] ID :- {ASSID}")
-        console.print(f"└[red] ✅ Genius UserBot Boot Complete 💯 ...")
+        console.print(f"└[red] ✅ Brotherhood UserBot Boot Complete 💯 ...")
         await idle()
         console.print(f"\n[red] Userbot Stopped")
 
 
 home_text_pm = f"""**ʜᴇʟʟᴏ ,
 ᴍʏ ɴᴀᴍᴇ ɪs {BOT_NAME}.
-I Aᴍ Gᴇɴɪᴜs, Aɴ Aᴅᴠᴀɴᴄᴇᴅ UsᴇʀBᴏᴛ Wɪᴛʜ Sᴏᴍᴇ Usᴇғᴜʟ Fᴇᴀᴛᴜʀᴇs.**"""
+I Aᴍ Brotherhood, Aɴ Aᴅᴠᴀɴᴄᴇᴅ UsᴇʀBᴏᴛ Wɪᴛʜ Sᴏᴍᴇ Usᴇғᴜʟ Fᴇᴀᴛᴜʀᴇs.**"""
 
 
 @robot.on_message(command(["start"]) & filters.private)
 async def start(_, message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/027283ee9defebc3298b8.png",
+        photo=f"https://telegra.ph/file/18aa7d4520261993a2e4e.jpg",
         caption=f"""**━━━━━━━━━━━━━━━━━━━━━━━━
-💥 Hᴇʟʟᴏ, I Aᴍ Gᴇɴɪᴜs » Aɴ Aᴅᴠᴀɴᴄᴇᴅ
+💥 Hᴇʟʟᴏ, I Aᴍ Brotherhood » Aɴ Aᴅᴠᴀɴᴄᴇᴅ
 Pʀᴇᴍɪᴜᴍ Tᴇʟᴇɢʀᴀᴍ Usᴇʀ Bᴏᴛ.
 
 ┏━━━━━━━━━━━━━━━━━━━┓
-┣★ Oᴡɴᴇʀ'xD› : [Aᴅɪᴛʏᴀ Hᴀʟᴅᴇʀ](https://t.me/adityahalder)
-┣★ Uᴘᴅᴀᴛᴇs ›› : [Aᴅɪᴛʏᴀ Sᴇʀᴠᴇʀ](https://t.me/adityaserver)
-┣★ Sᴜᴘᴘᴏʀᴛ » : [Aᴅɪᴛʏᴀ Dɪsᴄᴜs](https://t.me/adityadiscus)
+┣★ Uᴘᴅᴀᴛᴇs ›› : [Brotherhood Council](https://t.me/THE_BROTHERHOOD_COUNCIL)
+┣★ Sᴜᴘᴘᴏʀᴛ » : [Brotherhood Support](https://t.me/TBH_COUNCIL_SUPPORT)
 ┗━━━━━━━━━━━━━━━━━━━┛
 
 💞 Cʟɪᴄᴋ Oɴ Dᴇᴘʟᴏʏ Bᴜᴛᴛᴏɴ Tᴏ Mᴀᴋᴇ
-Yᴏᴜʀ Oᴡɴ » Gᴇɴɪᴜs Usᴇʀ Bᴏᴛ.
+Yᴏᴜʀ Oᴡɴ » Brotherhood Usᴇʀ Bᴏᴛ.
 ━━━━━━━━━━━━━━━━━━━━━━━━**""",
     reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "💥 Dᴇᴘʟᴏʏ Gᴇɴɪᴜs UsᴇʀBᴏᴛ ✨", url=f"https://github.com/GeniusBoi/Genius-UserBot")
+                        "💥 Dᴇᴘʟᴏʏ Brotherhood UsᴇʀBᴏᴛ ✨", url=f"https://github.com/The-BrotherHood-Council/tbh-ubserbot")
                 ]
                 
            ]
@@ -152,10 +151,10 @@ async def help_parser(name, keyboard=None):
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     return (
         """**🥀 Wᴇʟᴄᴏᴍᴇ Tᴏ Hᴇʟᴘ Mᴇɴᴜ Oғ :
-Gᴇɴɪᴜs UsᴇʀBᴏᴛ Vᴇʀ : `2.0` 🔥...
+Brotherhood UsᴇʀBᴏᴛ Vᴇʀ : `2.0` 🔥...
 
 💞 Jᴜsᴛ Cʟɪᴄᴋ Oɴ Bᴇʟᴏᴡ Iɴʟɪɴᴇ
-Tᴏ Gᴇᴛ Gᴇɴɪᴜs Cᴏᴍᴍᴀɴᴅs ✨...**
+Tᴏ Gᴇᴛ Brotherhood Cᴏᴍᴍᴀɴᴅs ✨...**
 """.format(
             first_name=name
         ),
@@ -181,10 +180,10 @@ async def help_button(client, query):
     back_match = re.match(r"help_back", query.data)
     create_match = re.match(r"help_create", query.data)
     top_text = f"""**🥀 Wᴇʟᴄᴏᴍᴇ Tᴏ Hᴇʟᴘ Mᴇɴᴜ Oғ :
-Gᴇɴɪᴜs UsᴇʀBᴏᴛ Vᴇʀ : `2.0` 🔥...
+Brotherhood UsᴇʀBᴏᴛ Vᴇʀ : `2.0` 🔥...
 
 💞 Jᴜsᴛ Cʟɪᴄᴋ Oɴ Bᴇʟᴏᴡ Iɴʟɪɴᴇ
-Tᴏ Gᴇᴛ Gᴇɴɪᴜs Cᴏᴍᴍᴀɴᴅs ✨...**
+Tᴏ Gᴇᴛ Brotherhood Cᴏᴍᴍᴀɴᴅs ✨...**
  """
     if mod_match:
         module = mod_match.group(1)
