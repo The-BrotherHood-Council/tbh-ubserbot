@@ -1,6 +1,6 @@
 import shlex
-from AdityaHalder.modules.databases.afk_db import get_afk_status
-from AdityaHalder.modules.databases.pmpermit_db import get_approved_users, pm_guard
+from TBH.modules.databases.afk_db import get_afk_status
+from TBH.modules.databases.pmpermit_db import get_approved_users, pm_guard
 from pyrogram import Client
 from pyrogram.types import Message, User
 
