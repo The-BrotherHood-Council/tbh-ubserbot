@@ -1,12 +1,12 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from AdityaHalder.config import MONGO_DB_URL, OWNER_ID
+from TBH.config import MONGO_DB_URL, OWNER_ID
 
-from AdityaHalder.modules.clientbot.clientbot import client as app
-from AdityaHalder.modules.helpers.command import commandpro
-from AdityaHalder.utilities.misc import SUDOERS
-from AdityaHalder.utilities.utils import add_sudo, remove_sudo
+from TBH.modules.clientbot.clientbot import client as app
+from TBH.modules.helpers.command import commandpro
+from TBH.utilities.misc import SUDOERS
+from TBH.utilities.utils import add_sudo, remove_sudo
 
 
 
