@@ -32,7 +32,7 @@ MOD_NOLOAD = []
 
 ### Mongo DB
 MONGODB_CLI = KaalXD(MONGO_DB_URL)
-db = MONGODB_CLI.Hellboy
+db = MONGODB_CLI.Aditya
 
 ### Sudo Users
 sudo()
@@ -72,11 +72,11 @@ async def initiate_bot():
     os.system("clear")
     header = Table(show_header=True, header_style="bold yellow")
     header.add_column(
-        "Brotherhood Userbot : Best Ever Userbot"
+        "Genius Userbot : Best Ever Userbot"
     )
     console.print(header)
     with console.status(
-        "[magenta] Tbh UserBot Booting...",
+        "[magenta] Genius UserBot Booting...",
     ) as status:
         console.print("┌ [red]Booting Up The Bot Clients...\n")
         await robot.start()
