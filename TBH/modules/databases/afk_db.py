@@ -1,5 +1,5 @@
 import asyncio
-from AdityaHalder.modules.databases import cli
+from TBH.modules.databases import cli
 
 collection = cli["Kaal"]["afk"]
 
