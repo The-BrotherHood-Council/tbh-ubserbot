@@ -2,12 +2,12 @@ import asyncio
 import random
 from pyrogram import *
 from pyrogram.types import *
-from AdityaHalder.modules.helpers.filters import command
-from AdityaHalder.modules.helpers.command import commandpro
-from AdityaHalder.modules.helpers.basics import edit_or_reply
-from AdityaHalder.modules.helpers.decorators import errors, sudo_users_only
+from TBH.modules.helpers.filters import command
+from TBH.modules.helpers.command import commandpro
+from TBH.modules.helpers.basics import edit_or_reply
+from TBH.modules.helpers.decorators import errors, sudo_users_only
 from pyrogram.errors.exceptions.flood_420 import FloodWait
-from AdityaHalder.utilities.misc import SUDOERS
+from TBH.utilities.misc import SUDOERS
 
 
 
