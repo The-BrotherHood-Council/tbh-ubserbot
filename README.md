@@ -22,3 +22,11 @@
 
 ### 𝐎𝐰𝐧𝐞𝐫 𝐎𝐟 𝐓𝐡𝐢𝐬 𝐑𝐞𝐩𝐨𝐬𝐢𝐭𝐨𝐫𝐲
 [![Brotherhood Council](https://telegra.ph/file/a6b556ff6658246e408bd.jpg)](https://t.me/TBH_COUNCIL_SUPPORT)
+
+###Credit
+- [Aditya](https://github.com/adityahalderxd/)
+
+### Special Credits
+- [SHIKARI](https://github.com/ShikariBaaZ)
+- [Hell Boy](https://t.me/HATERS_BAAP_BOL)
+- [Hunter](https://t.me/Hunter_is_back)
