@@ -1,7 +1,7 @@
 import socket
 from pyrogram import filters
-from AdityaHalder import config
-from AdityaHalder.utilities import pymongodb
+from TBH import config
+from TBH.utilities import pymongodb
 from ..logger import LOGGER
 
 SUDOERS = filters.user()
