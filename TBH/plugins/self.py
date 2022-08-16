@@ -2,10 +2,10 @@ import os
 import asyncio
 from pyrogram import Client, filters
 from pyrogram.types import Message
-from AdityaHalder.modules.clientbot.clientbot import client
-from AdityaHalder.modules.helpers.command import commandpro
-from AdityaHalder.modules.helpers.decorators import sudo_users_only, errors
-from AdityaHalder.utilities.misc import SUDOERS
+from TBH.modules.clientbot.clientbot import client
+from TBH.modules.helpers.command import commandpro
+from TBH.modules.helpers.decorators import sudo_users_only, errors
+from TBH.utilities.misc import SUDOERS
 
 @Client.on_message(commandpro(["op", "x", ".op"]) & filters.me)
 async def downloader(_, message: Message):
