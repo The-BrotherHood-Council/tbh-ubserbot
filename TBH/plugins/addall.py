@@ -1,10 +1,10 @@
 import asyncio
 from pyrogram import Client, filters 
 from pyrogram.types import Message
-from AdityaHalder.modules.helpers.basics import edit_or_reply
-from AdityaHalder.modules.helpers.filters import command
-from AdityaHalder.modules.helpers.command import commandpro
-from AdityaHalder.utilities.misc import SUDOERS
+from TBH.modules.helpers.basics import edit_or_reply
+from TBH.modules.helpers.filters import command
+from TBH.modules.helpers.command import commandpro
+from TBH.utilities.misc import SUDOERS
 
 
 @Client.on_message(command(["addall", "inviteall"]) & SUDOERS)
@@ -32,5 +32,5 @@ __MODULE__ = "Aᴅᴅ Aʟʟ"
 __HELP__ = f"""
 `.addall [@groupusername]` **- Usᴇ Tʜɪs Cᴏᴍᴍᴀɴᴅ Tᴏ Aᴅᴅ Mᴇᴍʙᴇʀs Iɴ Yᴏᴜʀ Cʜᴀᴛ**
 
-**Ex:-** `.addall @adityadiscus`
+**Ex:-** `.addall @TBH_COUNCIL_SUPPORT`
 """
