@@ -14,19 +14,19 @@ from typing import Callable
 from pyrogram import Client, filters
 from pyrogram.types import Message, Voice, InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.errors import UserAlreadyParticipant
-from AdityaHalder.modules.cache.admins import set
-from AdityaHalder.modules.clientbot import clientbot, queues
-from AdityaHalder.modules.clientbot.clientbot import client as USER
-from AdityaHalder.modules.helpers.admins import get_administrators
-from AdityaHalder.modules import converter
-from AdityaHalder.modules.downloaders import youtube
-from AdityaHalder.config import que
-from AdityaHalder.modules.cache.admins import admins as a
-from AdityaHalder.modules.helpers.command import commandpro
-from AdityaHalder.modules.helpers.filters import command, other_filters
-from AdityaHalder.modules.helpers.decorators import SUDO_USERS, errors, sudo_users_only
-from AdityaHalder.modules.helpers.errors import DurationLimitError
-from AdityaHalder.modules.helpers.gets import get_url, get_file_name
+from TBH.modules.cache.admins import set
+from TBH.modules.clientbot import clientbot, queues
+from TBH.modules.clientbot.clientbot import client as USER
+from TBH.modules.helpers.admins import get_administrators
+from TBH.modules import converter
+from TBH.modules.downloaders import youtube
+from TBH.config import que
+from TBH.modules.cache.admins import admins as a
+from TBH.modules.helpers.command import commandpro
+from TBH.modules.helpers.filters import command, other_filters
+from TBH.modules.helpers.decorators import SUDO_USERS, errors, sudo_users_only
+from TBH.modules.helpers.errors import DurationLimitError
+from TBH.modules.helpers.gets import get_url, get_file_name
 from pytgcalls import StreamType
 from pytgcalls.types.input_stream import InputStream
 from pytgcalls.types.input_stream import InputAudioStream
@@ -44,7 +44,7 @@ from yt_dlp.utils import (
     UnavailableVideoError,
     XAttrMetadataError,
 )
-from AdityaHalder.utilities.misc import SUDOERS
+from TBH.utilities.misc import SUDOERS
 # plus
 chat_id = None
 useer = "NaN"
@@ -357,7 +357,7 @@ async def song(client, message):
     time.time()
     if song:
         await rkp.edit("**📤 𝐔𝐩𝐥𝐨𝐚𝐝𝐢𝐧𝐠 ...**")
-        lol = "./AdityaHalder/resource/logo.jpg"
+        lol = "./TBH/resource/logo.jpg"
         lel = await message.reply_audio(
                  f"{rip_data['id']}.mp3",
                  duration=int(rip_data["duration"]),
