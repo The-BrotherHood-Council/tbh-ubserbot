@@ -1,9 +1,9 @@
 import asyncio
 from pyrogram import filters, Client
 from pyrogram.methods import messages
-from AdityaHalder.modules.helpers.filters import command
-from AdityaHalder.modules.helpers.program import get_arg, denied_users
-import AdityaHalder.modules.databases.pmpermit_db as Kaal
+from TBH.modules.helpers.filters import command
+from TBH.modules.helpers.program import get_arg, denied_users
+import TBH.modules.databases.pmpermit_db as Kaal
 
 FLOOD_CTRL = 0
 ALLOWED = []
