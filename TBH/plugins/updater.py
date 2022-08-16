@@ -4,8 +4,8 @@ from os import system, execle, environ
 from git.exc import InvalidGitRepositoryError
 from pyrogram.types import Message
 from pyrogram import filters, Client
-from AdityaHalder.config import UPSTREAM_REPO, UPSTREAM_BRANCH, OWNER_ID
-from AdityaHalder.modules.helpers.filters import command
+from TBH.config import UPSTREAM_REPO, UPSTREAM_BRANCH, OWNER_ID
+from TBH.modules.helpers.filters import command
 
 
 def gen_chlog(repo, diff):
@@ -53,11 +53,11 @@ async def update_bot(_, message: Message):
     msg = await message.edit("**🥀 ᴄʜᴇᴄᴋɪɴɢ ᴜᴘᴅᴀᴛᴇs ✨ ...**")
     update_avail = updater()
     if update_avail:
-        await msg.edit("**🥀 Gᴇɴɪᴜs UsᴇʀBᴏᴛ Uᴘᴅᴀᴛᴇᴅ\nTᴏ Lᴀᴛᴇsᴛ Vᴇʀsɪᴏɴ 🔥 ...\n\n💕 Rᴇsᴛᴀʀᴛɪɴɢ: Gᴇɴɪᴜs Usᴇʀ\nBᴏᴛ, Pʟᴇᴀsᴇ » Wᴀɪᴛ ✨ ...**")
+        await msg.edit("**🥀 Brotherhood UsᴇʀBᴏᴛ Uᴘᴅᴀᴛᴇᴅ\nTᴏ Lᴀᴛᴇsᴛ Vᴇʀsɪᴏɴ 🔥 ...\n\n💕 Rᴇsᴛᴀʀᴛɪɴɢ: Gᴇɴɪᴜs Usᴇʀ\nBᴏᴛ, Pʟᴇᴀsᴇ » Wᴀɪᴛ ✨ ...**")
         system("git pull -f && pip3 install -U -r Installer")
-        system("python3 -m AdityaHalder")
+        system("python3 -m TBH")
         return
-    await msg.edit(f"**🥀 Gᴇɴɪᴜs UsᴇʀBᴏᴛ Aʟʀᴇᴀᴅʏ\nUᴘᴅᴀᴛᴇᴅ Tᴏ Lᴀᴛᴇsᴛ 🔥 ...\n\n💕 Fᴏʀ Aɴʏ Qᴜᴇʀʏ › Cᴏɴᴛᴀᴄᴛ\nTᴏ » @AdityaHalder ✨ ...**")
+    await msg.edit(f"**🥀 Brotherhood UsᴇʀBᴏᴛ Aʟʀᴇᴀᴅʏ\nUᴘᴅᴀᴛᴇᴅ Tᴏ Lᴀᴛᴇsᴛ 🔥 ...\n\n💕 Fᴏʀ Aɴʏ Qᴜᴇʀʏ › Cᴏɴᴛᴀᴄᴛ\nTᴏ » @TBH ✨ ...**")
 
 __MODULE__ = "Uᴘᴅᴀᴛᴇ"
 __HELP__ = f"""
