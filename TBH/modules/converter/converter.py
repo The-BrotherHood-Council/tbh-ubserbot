@@ -1,7 +1,7 @@
 import asyncio
 
 from os import path
-from AdityaHalder.modules.helpers.errors import FFmpegReturnCodeError
+from TBH.modules.helpers.errors import FFmpegReturnCodeError
 
 
 async def convert(file_path: str) -> str:
