@@ -1,22 +1,22 @@
-# Kang With Credit » @AdityaHalder
+# Kang With Credit » @TBH
 
 import random
 from typing import Tuple
 from pyrogram import Client
 from pyrogram import filters
 from traceback import format_exc
-from AdityaHalder.config import SUDO_USERS
-from AdityaHalder.utilities.data import *
-from AdityaHalder.modules.helpers.filters import command
+from TBH.config import SUDO_USERS
+from TBH.utilities.data import *
+from TBH.modules.helpers.filters import command
 from pyrogram.errors import FloodWait, MessageNotModified
 from pyrogram.types import (
     InlineKeyboardButton,
     InlineQueryResultArticle,
     InputTextMessageContent,
     Message)
-from AdityaHalder.utilities.mongo import kaalub_info, rkaal, runkaal
-from AdityaHalder.modules.helpers.decorators import errors, sudo_users_only
-from AdityaHalder.utilities.misc import SUDOERS
+from TBH.utilities.mongo import kaalub_info, rkaal, runkaal
+from TBH.modules.helpers.decorators import errors, sudo_users_only
+from TBH.utilities.misc import SUDOERS
 
 
 
