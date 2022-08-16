@@ -1,6 +1,6 @@
-from AdityaHalder.modules.databases import cli
+from TBH.modules.databases import cli
 
-collection = cli["Kaal"]["rraid"]
+collection = cli["Brotherhood"]["rraid"]
 
 
 async def rraid_user(chat):
